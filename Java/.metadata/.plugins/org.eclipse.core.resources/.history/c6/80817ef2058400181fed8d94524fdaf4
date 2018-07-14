@@ -1,0 +1,16 @@
+package section2;
+
+public class OrthoPolygon {
+	public int n;
+	public MyPoint2[] verticies;
+	
+	public OrthoPolygon(int n){
+		this.n = 0;
+		verticies = new MyPoint2[n];
+		
+	}
+	
+	public void addVertex(int x, int y){
+		vertices[n++] = new MyPoint2(x,y);
+	}
+}

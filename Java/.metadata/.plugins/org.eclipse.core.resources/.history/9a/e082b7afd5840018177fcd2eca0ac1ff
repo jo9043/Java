@@ -1,0 +1,15 @@
+package section2;
+
+public class oneDayEvent {
+	private String title;
+	private myDate date;
+	
+	public oneDayEvent(String title, myDate date){
+		this.title = title;
+		this.date = date;
+	}
+	
+	public String toString(){
+		return title + ", " + date;
+	}
+}

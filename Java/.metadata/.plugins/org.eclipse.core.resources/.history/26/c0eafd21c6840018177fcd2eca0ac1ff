@@ -1,0 +1,16 @@
+package section3;
+
+public class Code10_2 {
+	public static void main(String[] args){
+		Code10 code10 = new Code10();
+		
+		code10.s = 10; // 올바른 표현은 아니다.
+		Code10.s = 10;
+		
+		code10.t = 100;
+		
+		code10.print1();
+		
+		code10.print2();
+	}
+}

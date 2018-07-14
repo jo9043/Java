@@ -1,0 +1,23 @@
+package section2;
+
+public class Polynomial2{
+	public char name;
+	public Term2 [] terms;
+	public int nTerms = 0;
+	
+	public int calcPolynomial(Polynomial2 p, int x){
+		int result = 0;
+		for(int i=0; i<p.nTerms; i++)
+			result += calcTerm(p.terms[i], x);
+		return result;
+	}
+	
+	public void printPolynomial(Polynomial2 p){
+		for(int i=0; i<p.nTerms; i++){
+			printTerm(p.terms[i]);
+			System.out.print("+");
+		}
+		System.out.println();
+	}
+	
+}

@@ -1,0 +1,12 @@
+
+public class Pharming {
+	public void processCommand(){
+		Scanner kb = new Scanner(System.in);
+		
+	}
+	
+	public static void main(String[] args){
+		Pharming pharm = new Pharming();
+		pharm.processCommand();
+	}
+}

@@ -1,0 +1,23 @@
+package section1;
+
+/*
+ * IS-A 관계
+ * A Notebook is a Computer
+ * Computer is the superclass of Notebook
+ * Notebook is a subclass of Computer
+ */
+
+public class Code01 { // 상속
+	
+	public void run(){
+		Notebook test = new Notebook("Dell", "15", 4, 1000, 1.2, 15.6, 1.5);
+		System.out.println(test.computerPower());
+		System.out.println(test.toString());
+	}
+	
+	public static void main(String[] args){
+		Code01 test = new Code01();
+		test.run();
+	}
+
+}

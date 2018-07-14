@@ -1,0 +1,9 @@
+package section1;
+
+public class Code01 { // »ó¼Ó
+	public static void main(String[] args){
+		Notebook test = new Notebook();
+		test.manufacturer = "Dell"
+	}
+
+}

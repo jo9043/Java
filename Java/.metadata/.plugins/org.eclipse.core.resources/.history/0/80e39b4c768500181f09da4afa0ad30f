@@ -1,0 +1,8 @@
+public class MyTime {
+	String x;
+	String y;
+	String area;
+	int day;
+	int hour;
+	int min;
+}

@@ -1,0 +1,72 @@
+package Section3;
+
+import java.util.Scanner;
+import java.io.File;
+
+/* 실행 예
+ * $read sample.txt
+ * $find heaven
+ * The world "heaven" appears 13 times.
+ * $saveas index.txt
+ * $find java
+ * The word "java" does not appear.
+ * $exit
+ */
+
+public class Code22 { // 인덱스 메이커
+	
+	static String [] words = new String[100000];
+	static int [] count = new int [100000];
+	static int n = 0;
+	
+	static public void main(String[] args){
+		Scanner kb = new Scanner(System.in);
+		
+		while(true){
+			System.out.print("$ ");
+			String command = kb.next();
+			if(command.equals("read")){
+				String fileName = kb.next();
+				makeIndex(fileName);
+			}
+			else if(command.equals("find")){
+				
+			}
+			else if(command.equals("saveas")){
+				
+			}
+			else if(command.equals("exit"))
+				break;
+			
+			else
+				System.out.print("Wrong command");
+				
+			
+		}
+		
+		kb.close();
+	}
+	
+	static void makeIndex(String fileName){
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

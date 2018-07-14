@@ -1,0 +1,21 @@
+package section1;
+
+
+// Computer의 속성을 물려 받는다
+public class Notebook extends Computer {
+
+	private double screenSize;
+	private double weight;
+	
+	public Notebook(String man, String proc, int ram, int disk, double speed, double screen, double weight){
+		manufacturer = man;
+		processor = proc;
+		ramSize = ram;
+		diskSize = disk;
+		processorSpeed = speed;
+		screenSize = screen;
+		this.weight = weight;
+		
+	}
+	
+}

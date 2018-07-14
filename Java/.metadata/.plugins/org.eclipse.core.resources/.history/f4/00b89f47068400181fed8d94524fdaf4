@@ -1,0 +1,22 @@
+package section2;
+
+public class OrthoPolygon {
+	public int n;
+	public MyPoint2[] vertices;
+	
+	public OrthoPolygon(int n){
+		this.n = 0;
+		vertices = new MyPoint2[n];
+		
+	}
+	
+	public void addVertex(int x, int y){
+		vertices[n++] = new MyPoint2(x,y);
+	}
+	
+	public boolean contains(MyPoint2 p){
+		OrthoLine arrow = new OrthoLine();
+		
+		
+	}
+}

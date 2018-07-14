@@ -1,0 +1,34 @@
+import java.util.Calendar;
+
+
+public class myMain {
+
+	static MyTime[] time;
+
+
+
+	public static void main(String[] args){
+		time = new MyTime[100];
+
+
+	}
+
+	public String getDate(MyTime time){
+		Calendar temp=Calendar.getInstance ( );
+		temp.add ( Calendar.DAY_OF_MONTH, iDay );
+		int nYear = temp.get ( Calendar.YEAR );
+		int nMonth = temp.get ( Calendar.MONTH ) + 1;
+		int nDay = temp.get ( Calendar.DAY_OF_MONTH );
+		StringBuffer sbDate=new StringBuffer ( );
+		sbDate.append ( nYear );
+		if ( nMonth < 10 ) sbDate.append ( "0" );
+		sbDate.append ( nMonth );
+		if ( nDay < 10 ) sbDate.append ( "0" );
+		sbDate.append ( nDay );
+		return sbDate.toString ( );
+
+
+	}
+
+
+}

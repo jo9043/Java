@@ -1,0 +1,8 @@
+package section2;
+
+public class durationEvent {
+	private String title;
+	private myDate begin;
+	private myDate end;
+
+}

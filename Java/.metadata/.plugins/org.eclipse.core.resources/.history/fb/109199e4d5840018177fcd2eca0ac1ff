@@ -1,0 +1,14 @@
+package section2;
+
+public class durationEvent {
+	private String title;
+	private myDate begin;
+	private myDate end;
+	
+	public durationEvent(String title, myDate b, myDate e){
+		this.title = title;
+		this.begin = b;
+		this.end = e;
+	}
+
+}

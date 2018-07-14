@@ -1,0 +1,20 @@
+
+public class myMain {
+	
+	static MyTime[] time;
+		
+	
+	public static void main(String[] args){
+		
+		
+		
+	}
+	
+	public String getDate(MyTime time){
+		
+		
+		
+	}
+	
+
+}

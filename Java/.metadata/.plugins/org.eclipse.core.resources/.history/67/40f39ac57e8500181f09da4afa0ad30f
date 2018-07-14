@@ -1,0 +1,11 @@
+
+public class Pharming {
+	public void processCommand(){
+		
+	}
+	
+	public static void main(String[] args){
+		Pharming pharm = new Pharming();
+		pharm.processCommand();
+	}
+}

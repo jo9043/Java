@@ -1,0 +1,53 @@
+package Section1;
+
+import java.util.Scanner;
+
+/*
+ * 프로그램 실행 예
+ * 
+ * $create f 	//다항함수 f=0을 정의
+ * $add f 2 3 	//f(x)에 2x^3을 더한다.
+ * $add f -1 1 	//f(x) = 2x^3 -x이 된다
+ * $calc f 2		//x=2일때 다항함수 f의 값을 구한다
+ * $print f 		//차수에 관한 내림차순으로 정렬하여 출력
+ * 
+ * $exit
+ */
+
+public class Code06 {
+
+	static Polynomial [] polys = new Polynomial[50];
+	static int n = 0;
+
+	public static void main(String[] args){
+		Scanner kb = new Scanner(System.in);
+		while(true){
+			String command = kb.next();
+			if(command.equals("create")){
+
+
+			}
+			else if(command.equals("add")){
+
+
+
+			}
+			else if(command.equals("calc")){
+
+
+			}
+			else if(command.equals("print")){
+
+
+			}
+			else if(command.equals("exit")){
+				break;
+			}
+
+
+
+
+		}
+
+	}
+}

@@ -1,0 +1,110 @@
+package section2;
+
+import java.util.Scanner;
+
+/*
+ * 클래스는 서로 관련있는 데이터들을 하나의 단위로 묶어두기 위한 것
+ * 또한 그 데이터와 관련이 깊은 메서드도 함께 묶어둘수 있다
+ * 이렇게 함으로써 코드의 응집도를 높이고 결합도를 낮출 수 있다.
+ * 모듈간의 상호의존성이 떨어져 구조가 단순해진다.
+ */
+
+public class Code07 {
+	static Polynomial2 [] polys = new Polynomial2[50];
+	static int n = 0;
+
+	public static void main(String[] args){
+		Scanner kb = new Scanner(System.in);
+		while(true){
+			System.out.print("$ ");
+			String command = kb.next();
+			if(command.equals("create")){
+				char name = kb.next().charAt(0);
+
+				Polynomial p = new Polynomial();
+				p.name = name;
+				p.nTerms = 0;
+				polys[n] = p;
+				polys[n].terms = new Term[100];
+				n++;
+			}
+			else if(command.equals("add")){
+				char name = kb.next().charAt(0);
+				int index = find(name);
+
+				if(index == -1)
+					System.out.println("No such polynomial exists.");
+				else{
+					int c = kb.nextInt();
+					int e = kb.nextInt();
+					addTerm(polys[index],c,e);
+				}
+			}
+			else if(command.equals("calc")){
+				char name = kb.next().charAt(0);
+				int index = find(name);
+
+				if(index == -1)
+					System.out.println("No such polynomial exists.");
+				else{
+					int x = kb.nextInt();
+					int result = polys[index].calcPolynomial(x);
+					System.out.println(result);
+
+				}
+
+			}
+			else if(command.equals("print")){
+				char name = kb.next().charAt(0);
+				int index = find(name);
+
+				if(index == -1)
+					System.out.println("No such polynomial exists.");
+				else{
+					printPolynomial(polys[index]);
+
+				}
+			}
+			else if(command.equals("exit")){
+				break;
+			}
+
+		}
+
+	}
+
+	private static void addTerm(Polynomial p, int c, int e) {
+		int index = findTerms(p,e);
+		if(index != -1){
+			p.terms[index].coef += c;
+		}
+		else{
+			int i = p.nTerms-1;
+			while(i >=0 && p.terms[i].expo < e){
+				p.terms[i+1] = p.terms[i];
+				i--;
+			}
+			p.terms[i+1] = new Term();
+			p.terms[i+1].coef = c;
+			p.terms[i+1].expo = e;
+			p.nTerms++;
+		}
+	}
+
+	private static int findTerms(Polynomial p, int e) {
+		for(int i=0; i<p.nTerms && p.terms[i].expo >= e; i++){
+			if(p.terms[i].expo == e)
+				return i;
+		}
+		return -1;
+	}
+
+	private static int find(char name) {
+		for(int i=0; i<n; i++){
+			if(polys[i].name == name){
+				return i;
+			}
+		}
+		return -1;
+	}
+}

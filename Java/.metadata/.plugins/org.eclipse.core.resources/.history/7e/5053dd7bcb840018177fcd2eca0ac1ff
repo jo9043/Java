@@ -1,0 +1,6 @@
+package section1;
+
+public class Notebook extends Computer {
+	protected double screenSize;
+	protected double weight;
+}

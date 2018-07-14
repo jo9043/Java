@@ -1,0 +1,14 @@
+package section2;
+
+public class MyRectangle2 {
+	public MyPoint2 lu;
+	public int width;
+	public int height;
+	
+	public MyRectangle2(int x, int y, int w, int h){
+		lu.x = x;
+		lu.y = y;
+		width = w;
+		height = h;
+	}
+}

@@ -1,0 +1,11 @@
+package section1;
+
+public class Computer {
+	private String manufacturer;
+	private String porcessor;
+	private int ramSize;
+	private int diskSize;
+	private double processorSpeed;
+	
+
+}

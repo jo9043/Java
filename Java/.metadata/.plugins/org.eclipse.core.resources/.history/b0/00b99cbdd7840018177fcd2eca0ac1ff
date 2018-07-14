@@ -1,0 +1,15 @@
+package section2;
+
+public class deadLineEvent {
+	private String title;
+	private myDate deadline;
+	
+	public deadLineEvent(String title, myDate date){
+		this.title = title;
+		this.deadline = date;
+	}
+	
+	public String toString(){
+		return title + ", " + deadline.toString();
+	}
+}

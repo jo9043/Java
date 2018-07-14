@@ -1,0 +1,17 @@
+
+public class myFile extends myDate {
+	private String x;
+	private String y;
+	private String place;
+	private int day;
+	private int hour;
+	private int min;
+	
+	public myFile(String x, String y, String place){
+		super(day, hour, min);
+		this.x = x;
+		this.y = y;
+		this.place = place;
+	}
+
+}

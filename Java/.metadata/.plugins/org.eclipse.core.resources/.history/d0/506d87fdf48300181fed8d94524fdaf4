@@ -1,0 +1,36 @@
+package section2;
+
+public class Term2 {
+	int coef;
+	int expo;
+	
+	int calcTerm(int x){
+		return (int)(coef * Math.pow(x, expo));
+	}
+	
+	void printTerm(){
+		System.out.println(coef + "x^" + expo);
+	}
+}
+
+/*
+ * Term2 t = new Term2();
+ * t.coef = 3;
+ * t.expo = 2;
+ * int result = t.calcTerm(2);
+ * t.printTerm();
+ * 
+ * Term2는 설계도 일 뿐.
+ * 클래스가 아닌 각각의 객체 안에 있는 메서드들을 실행 하는 것. (클래스 안의 메서드들은 허상)
+ * 각각의 객체 안에 calcTerm과 printTerm 메서드가 존재.
+ * 데이터멤버 뿐만 아니라 각각의 메서드들도 객체마다 따로 존재.
+ */
+
+/*
+ * 객체란: 데이터 + 메서드
+ * 데이터는 객체의 정적 속성을 표현, 메서드는 객체의 기능(동적 속성)을 표현
+ * 
+ */
+
+
+

@@ -1,0 +1,15 @@
+package Section2;
+
+public class Term2 {
+	int coef;
+	int expo;
+	
+	int calcTerm(int x){
+		return (int)(coef * Math.pow(x, expo));
+	}
+	
+	void printTerm(){
+		System.out.println(coef + "x^" + expo);
+	}
+
+}

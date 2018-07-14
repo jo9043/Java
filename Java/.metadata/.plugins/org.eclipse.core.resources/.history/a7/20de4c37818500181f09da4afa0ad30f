@@ -1,0 +1,7 @@
+
+public class myFile extends myDate {
+	private String x;
+	private String y;
+	private String place;
+
+}

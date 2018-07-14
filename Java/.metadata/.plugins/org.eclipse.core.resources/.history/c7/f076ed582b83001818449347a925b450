@@ -1,0 +1,13 @@
+package Section1;
+
+import java.util.Scanner;
+import java.io.File;
+
+public class Code05 {
+	public static void main(String[] args){
+		
+		
+		
+	}
+
+}

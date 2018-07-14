@@ -1,0 +1,12 @@
+package section2;
+
+public class OrthoPolygon {
+	public int n;
+	public MyPoint2[] vertices;
+	
+	public OrthoPolygon(int n){
+		this.n = n;
+		verticies = new MyPoint2[n]l
+		
+	}
+}

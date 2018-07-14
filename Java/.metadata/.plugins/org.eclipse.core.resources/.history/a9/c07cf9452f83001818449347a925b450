@@ -1,0 +1,26 @@
+import java.util.Calendar;
+
+
+public class myMain {
+
+	static MyTime[] time;
+
+
+
+	public static void main(String[] args){
+		time = new MyTime[100];
+
+
+	}
+	
+	public void doCurrentDate(){
+		int nYear;
+		int nMonth;
+		int nDay;
+		
+		Calendar calendar = new GregorianCalendar(Locale.KOREA);
+		
+	}
+
+
+}

@@ -1,0 +1,32 @@
+package section1;
+
+public class Computer {
+	private String manufacturer;
+	private String porcessor;
+	private int ramSize;
+	private int diskSize;
+	private double processorSpeed;
+	
+	public double computerPower(){
+		return ramSize * processorSpeed;
+	}
+	
+	public double getRamSize(){
+		return ramSize;
+	}
+	
+	public double getProcessorSpeed(){
+		return processorSpeed;
+	}
+	
+	public int getDiskSize(){
+		return diskSize;
+	}
+	
+	public String toString(){
+		
+	}
+
+	
+
+}

@@ -1,0 +1,35 @@
+package Section1;
+
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+
+public class Code05 {
+	
+	static MyRectangle1[] rects;
+	static int n =0;
+	
+	public static void main(String[] args){
+		
+		rects = new MyRectangle [100];
+		
+		try {
+			Scanner in = new Scanner(new File("data.txt"));
+			
+			rects[n] = new MyRectangle1();
+			
+			rects[n].lu.x = in.nextInt();
+			rects[n].lu.y = in.nextInt();
+			rects[n].width = in.nextInt();
+			rects[n].height = in.nextInt();
+			n++;
+			
+		} catch (FileNotFoundException e) {
+			System.out.println("No data file");
+			System.exit(1);
+		}
+		
+		
+	}
+
+}

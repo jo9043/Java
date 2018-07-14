@@ -1,0 +1,12 @@
+package section2;
+
+public class Polynomial3 {
+	public int nTerms;
+	public int Term3[] terms;
+	
+	public Polynomial3(){
+		nTerms = 0;
+		terms = new Temr3[100];
+	}
+
+}

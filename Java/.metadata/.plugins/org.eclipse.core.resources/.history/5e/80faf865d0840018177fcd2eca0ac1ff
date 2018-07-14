@@ -1,0 +1,9 @@
+package section1;
+
+public class Code02 { // Method Overding
+	public static void main(String[] args){
+		
+		
+		
+	}
+}

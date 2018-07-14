@@ -1,0 +1,28 @@
+package section2;
+
+/* 
+ * 생성자
+ * 
+ * 클래스 안에 그 클래스와 동일한 이름을 가지며 return 타입이 없는 특별한 메서드
+ * new 명령으로 객체가 생성될 때 자동으로 실행된다.
+ * 객체의 데이터 필드의 값을 초기화 하는 것이 주 목적.
+ */
+
+
+public class Term3 {
+	public int coef;
+	public int expo;
+	
+	public Term3(int c, int e){
+		coef = c;
+		expo = e;
+	}
+	
+	public int calcTerm(int x){
+		return (int)(coef * Math.pow(x, expo));
+	}
+	
+	public void printTerm(){
+		System.out.println(coef + "x^" + expo);
+	}
+}

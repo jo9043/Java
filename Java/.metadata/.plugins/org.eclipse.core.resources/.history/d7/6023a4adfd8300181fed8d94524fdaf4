@@ -1,0 +1,49 @@
+package section2;
+
+public class Polynomial2{
+	public char name;
+	public Term2 [] terms;
+	public int nTerms = 0;
+	
+	public int calcPolynomial(int x){
+		int result = 0;
+		for(int i=0; i<nTerms; i++)
+			result += terms[i].calcTerm(x);
+		return result;
+	}
+	
+	public void printPolynomial(){
+		for(int i=0; i<nTerms; i++){
+			terms[i].printTerm();
+			System.out.print("+");
+		}
+		System.out.println();
+	}
+	
+	public void addTerm(Polynomial2 p, int c, int e) {
+		int index = findTerms(e);
+		if(index != -1){
+			p.terms[index].coef += c;
+		}
+		else{
+			int i = p.nTerms-1;
+			while(i >=0 && p.terms[i].expo < e){
+				p.terms[i+1] = p.terms[i];
+				i--;
+			}
+			p.terms[i+1] = new Term2();
+			p.terms[i+1].coef = c;
+			p.terms[i+1].expo = e;
+			p.nTerms++;
+		}
+	}
+
+	public int findTerms(int e) {
+		for(int i=0; i<nTerms && terms[i].expo >= e; i++){
+			if(terms[i].expo == e)
+				return i;
+		}
+		return -1;
+	}
+	
+}

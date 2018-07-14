@@ -1,0 +1,24 @@
+package section1;
+
+public class Computer {
+	protected String manufacturer;
+	protected String processor;
+	protected int ramSize;
+	protected int diskSize;
+	protected double processorSpeed;
+	
+	
+	
+	public String toString(){
+		String result = "Manufacturer: " + manufacturer +
+						"\nCPU: " + processor +
+						"\nRAM: " + ramSize + " megabytes" +
+						"\nDisk: " + diskSize + " gigabytes" +
+						"\nProcessor speed: " + processorSpeed + " gigahertz";
+		
+		return result;
+	}
+
+	
+
+}

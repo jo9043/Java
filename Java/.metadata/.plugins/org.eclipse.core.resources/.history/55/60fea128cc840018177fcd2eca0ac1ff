@@ -1,0 +1,19 @@
+package section1;
+
+public class Code01 { // »ó¼Ó
+	public static void main(String[] args){
+		Notebook test = new Notebook();
+		test.manufacturer = "Dell";
+		test.processor = "15";
+		test.ramSize = 4;
+		test.diskSize = 1000;
+		test.processorSpeed = 1.2;
+		
+		test.screenSize = 15.6;
+		test.weight = 1.5;
+		
+		System.out.println(test.computerPower());
+		System.out.println(test.toString());
+	}
+
+}

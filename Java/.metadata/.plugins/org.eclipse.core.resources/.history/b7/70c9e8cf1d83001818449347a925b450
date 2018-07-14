@@ -1,0 +1,33 @@
+package Section1;
+
+public class Code01_2 { // 클래스
+	public static void main(String[] args) {
+		Person1 first; // 클래스는 하나의 '타입'이다.
+		first = new Person1(); // object, 클래스 타입의 객체를 생성
+		
+		// 프리미티브 타입이 아닌 모든 변수는 참조변수이다.
+		// 실제 데이터가 저장될 객체는 new 명령으로 따로 만들어야 하고,
+		// 참조 변수에는 그 객체의 주소를 저장한다.
+		
+		first.name = "John";
+		first.number = "010-0000-0001";
+		
+		System.out.println("Name: " +first.name+", Number: "+first.number);
+		
+		Person1 second = first; // 변수 Second도 First와 동일한 객체를 참조
+		second.name = "Tom";
+		
+		System.out.println("Name: " +first.name+", Number: "+first.number);
+		
+		Person1[] members;
+		members = new Person1[100];
+		
+		members[0] = first;
+		members[1] = new Person1();
+		members[1].name = "David";
+		members[1].number = "010-0000-0002";
+		
+		System.out.println("Name: " +members[1].name+", Number: "+members[1].number);
+		
+	}
+}

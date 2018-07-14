@@ -1,0 +1,36 @@
+package Section2;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Code20 { // 파일 입력 받은 후 정렬해서 출력
+	public static void main(String[] args) {
+		try {
+			int count = 0;
+			
+			Scanner inFile;
+			inFile = new Scanner(new File("input.txt"));
+			//String name = inFile.next();
+			
+			String[] name = new String[1000];
+			String[] number = new String[1000];
+			
+			while(inFile.hasNext()){ // detect End of File
+				name[count] = inFile.next();
+				number[count] = inFile.next();
+				count++;
+			}
+			
+			inFile.close();
+	
+		} catch (FileNotFoundException e) { // 파일이 없을 때의 예외 처리를 해줘야 함
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.exit(0);
+		} 
+		
+		for(int i=0; i<count; i++)
+			System.out.println("Name:"+name[i]+", Phone:"+number[i]);
+	}	
+}

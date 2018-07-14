@@ -1,0 +1,11 @@
+package Section2;
+
+public class Term2 {
+	int coef;
+	int expo;
+	
+	int clacTerm(int x){
+		return (int)(coef * Math.pow(x, expo));
+	}
+
+}

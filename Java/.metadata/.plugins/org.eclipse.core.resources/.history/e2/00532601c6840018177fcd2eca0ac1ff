@@ -1,0 +1,13 @@
+package section3;
+
+public class Code10_2 {
+	public static void main(String[] args){
+		Code10 code10 = new Code10();
+		
+		code10.t = 10;
+		code10.s = 100;
+		
+		code10.print1();
+		code10.print2();
+	}
+}

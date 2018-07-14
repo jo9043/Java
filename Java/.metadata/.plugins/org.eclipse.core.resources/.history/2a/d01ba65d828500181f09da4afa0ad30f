@@ -1,0 +1,20 @@
+
+public class myInform extends myDate {
+	
+	private String x;
+	private String y;
+	private String place;
+	private String 
+	
+	public myInform(int day, int hour, int min, String x, String y, String place){
+		super(day, hour, min);
+		this.x = x;
+		this.y = y;
+		this.place = place;
+	}
+	
+	public String toString(){
+		String result =  x + y + place + super.toString();
+	}
+
+}

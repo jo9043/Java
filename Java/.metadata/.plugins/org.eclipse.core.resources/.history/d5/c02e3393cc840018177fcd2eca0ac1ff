@@ -1,0 +1,9 @@
+package section1;
+
+// Computer의 속성을 물려 받는다
+public class Notebook extends Computer {
+
+	protected double screenSize;
+	protected double weight;
+	
+}

@@ -1,0 +1,47 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+/*
+ * $ file
+ * $ time
+ * $ calc
+ * 
+ * 
+ */
+
+public class Pharming {
+	public void processCommand(){
+		Scanner kb = new Scanner(System.in);
+		try {
+			Scanner in = new Scanner(new File("pharm.txt"));
+
+			while(true){
+				System.out.print("$ ");
+				String cmd = kb.next();
+				
+				if(cmd.equals("file")){
+					
+					
+				}
+				
+				
+				
+			}
+			
+			
+			
+			
+			
+		} catch (FileNotFoundException e) {
+			System.out.print("No Data File");
+			System.exit(1);
+		}
+		
+	}
+	
+	public static void main(String[] args){
+		Pharming pharm = new Pharming();
+		pharm.processCommand();
+	}
+}

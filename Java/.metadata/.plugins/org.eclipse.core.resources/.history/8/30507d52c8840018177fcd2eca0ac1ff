@@ -1,0 +1,17 @@
+package section3;
+
+/*
+ * 접근제어 (Access Modifier)
+ * 
+ * public: 클래스 외부에서 접근이 가능
+ * private: 클래스 내부에서만 접근이 가능
+ * default: 동일 패키지에 있는 다른 클래스에서 접근이 가능
+ * protected: 동일 패키지의 다른 클래스와 
+ * 			다른 패키지의 하위 클래스에서도 접근이 가능
+ */
+
+public class Code12 {
+	public static void main(String[] args){
+		
+	}
+}

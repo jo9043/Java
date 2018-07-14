@@ -1,0 +1,11 @@
+public class myDate {
+	private int day;
+	private int hour;
+	private int min;
+	
+	public String toString(){
+		
+		
+	}
+
+}

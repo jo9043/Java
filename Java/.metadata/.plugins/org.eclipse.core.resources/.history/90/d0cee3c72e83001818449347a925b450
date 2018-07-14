@@ -1,0 +1,21 @@
+
+public class myMain {
+	
+	static MyTime[] time;
+	
+		
+	
+	public static void main(String[] args){
+		time = new MyTime[100];
+		
+		
+	}
+	
+	public String getDate(MyTime time){
+		
+		
+		
+	}
+	
+
+}

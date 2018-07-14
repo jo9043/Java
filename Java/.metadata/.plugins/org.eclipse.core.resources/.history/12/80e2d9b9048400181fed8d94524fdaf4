@@ -1,0 +1,23 @@
+package section2;
+
+public class OrthoLine {
+	public MyPoint2 u;
+	public MyPoint2 v;
+	
+	public OrthoLine(MyPoint2 p, MyPoint2 q){
+		u = p;
+		u = q;
+	}
+	
+	public OrthoLine (int x1, int y1, int x2, int y2){
+		u = new MyPoint2(x1, y1);
+		v = new MyPoint2(x2, y2);
+	}
+	
+	public boolean intersects(OrthoLine other){
+		return true;
+		
+	}
+	
+
+}

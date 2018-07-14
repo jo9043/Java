@@ -1,0 +1,17 @@
+package section3;
+
+public class Code10_2 {
+	public static void main(String[] args){
+		Code10 code10 = new Code10();
+		code10.t = 100;
+		code10.print2();
+		
+		
+		code10.s = 10; // 올바른 표현은 아니다.
+		Code10.s = 10; // 객체가 아닌 클래스에서 access하는 것이 올바른 표현
+		code10.print1();
+		Code10.print1();
+		
+		
+	}
+}

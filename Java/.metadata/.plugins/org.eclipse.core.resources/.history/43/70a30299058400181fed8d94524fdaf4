@@ -1,0 +1,7 @@
+package section2;
+
+public class OrthoPolygon {
+	public int n;
+	public MyPoint2[] vertices;
+	
+}

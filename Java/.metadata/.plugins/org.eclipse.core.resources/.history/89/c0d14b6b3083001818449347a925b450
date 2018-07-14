@@ -1,0 +1,5 @@
+public class MyTime {
+	int day;
+	int hour;
+	int min;
+}

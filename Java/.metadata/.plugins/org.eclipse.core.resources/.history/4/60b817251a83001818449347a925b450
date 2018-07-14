@@ -1,0 +1,9 @@
+package Section1;
+
+public class Code01 { // Å¬·¡½º
+
+	public static void main(String[] args) {
+		Person1 a;
+
+	}
+}
